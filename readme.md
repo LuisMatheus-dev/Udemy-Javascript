@@ -3,6 +3,15 @@
   <img alt="udemy-course" src="https://i.imgur.com/JC4TeDf.png" width="452">
 </p>
 
+<style type="text/css">
+
+summary {
+   font-size: 24px;
+}
+
+</style>
+
+
 # :mag: Conteúdo:
 Este repositório ainda esta sendo atualizado:
 **Status Atual**: 16/21;
@@ -40,7 +49,7 @@ API, tecnicas em persistencia de dados, POO
 ## :memo: Resolução dos Exercícios:
 
 <details>
-<summary style="font-size: 24px; font-weight:600;">Módulo 1</summary>
+<summary>Módulo 1</summary>
   - Desafio 1
   - Desafio 2
   - Desafio 3
