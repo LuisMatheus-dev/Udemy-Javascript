@@ -3,47 +3,50 @@
   <img alt="udemy-course" src="https://i.imgur.com/JC4TeDf.png" width="452">
 </p>
 
-# Conteudo:
-Este repositória ainda esta sendo atualizado:
-Status Atual: 16/21;
+# :mag: Conteúdo:
+Este repositório ainda esta sendo atualizado:
+**Status Atual**: 16/21;
 
-## Projetos:
+## :open_file_folder: Projetos:
 
 ### Guess my Number
 Gera um número aleatório e pede para que o usuario o adivinhe
-#### Live Button
+<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Projects/Guess%20My%20Number"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a>
 
 ### Modal Window
 Componente comumente usada em sites, janela flutuante
-#### Live Button
+<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Projects/Modal%20Window"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a>
 
 ### Pig Game
 Jogo com dado, mais informações no repositório
-#### Live Button
+<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Projects/Pig%20Game"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a>
 
 ### Pig Game (Autoral)
 Interface refeita, com algumas features adicionais
-#### Live Button
+<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Projects/Pig%20Game/The%20Pig%20Game%20(Autoral)"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a>
 
 ### Bankist
 Consolidação em arrays e programação funcional
-#### Live Button
+<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Projects/Bankist"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a>
 
 ### Bankist Site
 Construção de comportamentos interativos, e componentes
-#### Live Button
+<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Projects/Bankist%20-%20site"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a>
 
 ### Mapty
 API, tecnicas em persistencia de dados, POO
-#### Live Button
+<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Projects/Mapty"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a>
 
-Resolução dos Exercicios:
+## :memo: Resolução dos Exercícios:
 
-### Modulo 1
-- Desafio 1
-- Desafio 2
-- Desafio 3
-- Desafio 4
+<details>
+<summary>Módulo 1</summary>
+  - Desafio 1
+  - Desafio 2
+  - Desafio 3
+  - Desafio 4
+</details>
+
 
 ### Modulo 2
 - Desafio 5
@@ -71,5 +74,3 @@ Resolução dos Exercicios:
 - Desafio 21
 - Desafio 22
 - Desafio 23
-
-### Como usar este repositório
