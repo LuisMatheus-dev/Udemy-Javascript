@@ -1,0 +1,505 @@
+body {
+    background-image: url(img/waves.svg);
+    background-color: #0c794f;
+    background-size: cover;
+}
+
+/* Conteudo do Modal */
+
+#config {
+    font-family: 'Poetsen One', sans-serif;
+    display: none;
+    font-size: 12px;
+    color:#646464;
+    text-align: center;
+  }
+
+#table-points {
+    position: absolute;
+    display: none;
+    background: rgb(227,227,227);
+    background: linear-gradient(0deg, rgba(227,227,227,1) 52%, rgba(255,255,255,1) 100%);
+    border-radius: 40px;
+    left: 26px;
+    top: 26px;
+    width: 300px;
+    height: 450px;
+    box-shadow: 0 10px 10px rgba(0,0,0, 0.2),
+    0 20px 20px rgba(0,0,0, 0.2),
+    0 40px 40px rgba(0,0,0, 0.2);
+    text-align: center;
+    color: #0c794f;
+    font-family: 'Poetsen One', sans-serif;
+
+}
+  
+#config input {
+    border: 2px solid #646464;
+    border-radius: 30px;
+    background-color: transparent;
+    padding: 6px;
+    margin: 0 6px;
+    font-family: 'Poetsen One', sans-serif;
+    font-size: 15px;
+    color: #919191;
+    border-radius: 30px;
+    outline: none;
+    text-indent: 40px;
+  }
+  
+#config input:focus {
+    box-shadow: 0px -1px 10px rgba(57, 182, 78, 0.5),
+                0px 0px 15px rgba(57, 182, 78, 0.5);
+}
+  
+#config label {
+    position: relative;
+    font-size: 16px;
+}
+
+#lbl-player-0 span::before,
+#lbl-player-1 span::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f4ff";
+    margin-right: 10px;
+}
+  
+#lbl-score span::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f091";
+    margin-right: 10px;
+}
+  
+#config label span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    text-indent: 25px;
+}
+
+.sucess {
+    top: 20px;
+    font-size: 15px;
+    color: #0c794f;
+    position: relative;
+}
+
+.sucess::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f058";
+    color: #0c794f;
+}
+
+.warning {
+    font-size: 15px;
+    color: red;
+    position: relative;
+    top: 20px;
+}
+.warning::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f071";
+    color: red;
+}
+
+
+
+/* Modal Styles */
+#game-modal {
+    background: rgb(214,214,214);
+    background: linear-gradient(0deg, rgba(214,214,214,1) 0%, rgba(255,255,255,1) 100%);
+    width: 770px;
+    height: 520px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 10px 10px rgba(0,0,0, 0.2),
+                0 20px 20px rgba(0,0,0, 0.2),
+                0 40px 40px rgba(0,0,0, 0.2);
+        
+
+}
+
+#player-name-0, #player-name-1, .action-btn, #dice-title  {
+    font-family: 'Junar', sans-serif;
+    text-transform: uppercase;
+}
+
+
+.points,.current-score,#sub-title {
+    font-family: 'Poetsen One', sans-serif;
+}
+
+
+/*  Game Title  */
+#dice-title {
+    font-size:  50px; 
+    color: red;
+    margin: 15px auto;
+
+}
+
+#sub-title {
+    font-size: 25px ;
+    color: #0c794f;
+    display: block;
+    font-weight: lighter;
+    text-align: center;
+    line-height: 0.7;
+   
+   
+}
+
+.points {
+    display: grid;
+    text-align: center;
+    font-size: 100px;
+    color: #0c794f;
+   
+
+
+}
+
+
+
+.current-score {
+    font-size: 20px;
+    color: #919191;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 40px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12),
+                0 2px 2px rgba(0,0,0,0.12),
+                0 4px 4px rgba(0,0,0,0.12),
+                0 8px 8px rgba(0,0,0,0.12);
+}
+
+
+/* Buttons */
+.action-btn {
+    background-color: red;
+    font-size: 15px;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12),
+                0 2px 2px rgba(0,0,0,0.12),
+                0 4px 4px rgba(0,0,0,0.12),
+                0 8px 8px rgba(0,0,0,0.12);
+}
+
+#btn-apply {
+
+    display: block;
+    margin: 40px auto;
+    padding: 5px 20px;
+    
+}
+#btn-apply > i{
+    font-size: 17px;
+}
+.winner {
+    background: linear-gradient(0deg, #ff6868c7 4%, transparent 44%);
+    color: red;
+    border-radius: 30px;
+    padding: 0 15px 10px;
+
+}
+
+.winner::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f091";
+    color: red;
+    font-size: 25px ;
+}
+
+.active {
+    background: linear-gradient(0deg, #0c794f56 4%, transparent 44%);
+    color: #0c794f;
+    border-radius: 30px;
+    padding: 0 15px 10px;
+}
+.active::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f35a";
+    color: red;
+    font-size: 25px ;
+}
+
+
+#btn-roll:hover {
+    background-color: #0c794f;
+}
+#btn-roll:hover i{
+    
+    animation: spin 1s infinite;
+}
+#btn-roll:checked  {
+    background-color: #bd0000;
+}
+#btn-roll:focus{
+    outline: none;
+}
+#btn-roll:active {
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.2),
+                inset 0 2px 2px rgba(0,0,0,0.2),
+                inset 0 4px 4px rgba(0,0,0,0.2),
+                inset 0 8px 8px rgba(0,0,0,0.2);
+}
+#btn-roll:disabled {
+    background-color: #919191;
+    color: white;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.2),
+                inset 0 2px 2px rgba(0,0,0,0.2),
+                inset 0 4px 4px rgba(0,0,0,0.2),
+                inset 0 8px 8px rgba(0,0,0,0.2);
+}
+#btn-hold:hover {
+    background-color: #0c794f;
+}
+#btn-hold:hover i {
+    font-size: 20px;
+ 
+}
+#btn-hold:checked {
+    background-color: #bd0000;
+}
+
+#btn-hold:focus {
+    outline: none;
+}
+#btn-hold:active {
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.2),
+                inset 0 2px 2px rgba(0,0,0,0.2),
+                inset 0 4px 4px rgba(0,0,0,0.2),
+                inset 0 8px 8px rgba(0,0,0,0.2);
+}
+#btn-hold:disabled {
+    background-color: #919191;
+    color: white;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.2),
+                inset 0 2px 2px rgba(0,0,0,0.2),
+                inset 0 4px 4px rgba(0,0,0,0.2),
+                inset 0 8px 8px rgba(0,0,0,0.2);
+}
+#btn-new:hover {
+    background-color: #0c794f;
+}
+#btn-new:hover i {
+    font-size: 20px;
+}
+
+#btn-new:checked {
+    background-color: #bd0000;
+}
+
+#btn-new:focus {
+    outline: none;
+}
+#btn-new:active {
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.2),
+                inset 0 2px 2px rgba(0,0,0,0.2),
+                inset 0 4px 4px rgba(0,0,0,0.2),
+                inset 0 8px 8px rgba(0,0,0,0.2);
+}
+#btn-configs:hover {
+    background-color: #0c794f;
+}
+
+#btn-configs:checked {
+    background-color: #bd0000;
+}
+
+#btn-configs:focus {
+    outline: none;
+}
+#btn-history:hover {
+    background-color: #0c794f;
+}
+
+#btn-history:checked {
+    background-color: #bd0000;
+}
+
+#btn-history:focus {
+    outline: none;
+}
+#btn-new:active {
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.2),
+                inset 0 2px 2px rgba(0,0,0,0.2),
+                inset 0 4px 4px rgba(0,0,0,0.2),
+                inset 0 8px 8px rgba(0,0,0,0.2);
+}
+#btn-apply:hover {
+    background-color: #0c794f;
+}
+#btn-apply:hover i {
+    font-size: 20px;
+ 
+}
+#btn-apply:checked {
+    background-color: #bd0000;
+}
+
+#btn-apply:focus {
+    outline: none;
+}
+#btn-apply:active {
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.2),
+                inset 0 2px 2px rgba(0,0,0,0.2),
+                inset 0 4px 4px rgba(0,0,0,0.2),
+                inset 0 8px 8px rgba(0,0,0,0.2);
+}
+
+.fa-plus-circle {transition: font-size 0.3s;}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+#dice{
+    width:150px;
+    height:150px;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: -1px 15px 15px rgba(0, 0, 0, 0.2),
+    inset 1px -10px 15px rgba(0, 0, 0, 0.3);
+}
+
+#dice-shadown {
+    content: "";
+    background-color: black;
+    width: 150px;
+    height: 50px;    
+    filter: blur(15px);
+    opacity: 0.5;
+    top: 63%;
+    left: 40.3%;
+    height: 10%;
+    position: absolute;
+    transform: rotateX(-100deg);
+    z-index: -1;  
+}
+
+
+
+
+#dado {
+    position: fixed;
+    top: 85%;
+    color: #0c794f;
+    left: 5%;
+    border: 1px solid transparent;
+    -webkit-filter: drop-shadow(-20px 5px 10px rgba(0,0,0,.2));
+    -moz-filter: drop-shadow(-20px 5px 10px rgba(0,0,0,.2));
+    -ms-filter: drop-shadow(-20px 5px 10px rgba(0,0,0,.2));
+    -o-filter: drop-shadow(-20px 5px 10px rgba(0,0,0,.2));
+    filter: drop-shadow(-20px 5px 10px rgba(0,0,0,.2));
+   
+}
+#cartas {
+    position: fixed;
+    top: 8%;
+    left: 20%;
+    border: 1px solid transparent;
+    -webkit-filter: drop-shadow(0 10px 5px rgba(0,0,0,.3));
+    -moz-filter: drop-shadow(0 10px 5px rgba(0,0,0,.3));
+    -ms-filter: drop-shadow(0 10px 5px rgba(0,0,0,.3));
+    -o-filter: drop-shadow(0 10px 5px rgba(0,0,0,.3));
+    filter: drop-shadow(0 10px 5px rgba(0,0,0,.3));
+    
+}
+#carta {
+    position: fixed;
+    top: 75%;
+    left: 80%;
+    border: 1px solid transparent;
+    -webkit-filter: drop-shadow(-30 30px 10px rgba(0,0,0,.2));
+    -moz-filter: drop-shadow(-30 30px 10px rgba(0,0,0,.2));
+    -ms-filter: drop-shadow(-30 30px 10px rgba(0,0,0,.2));
+    -o-filter: drop-shadow(-30 30px 10px rgba(0,0,0,.2));
+    filter: drop-shadow(-30px 30px 15px rgba(0,0,0,.2));
+    
+}
+
+#board {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-plus-circle {font-size: 15px;}
+
+#player-name-0,#player-name-1 {
+    font-size:25px;
+    
+}
+
+.player-0, .player-1 {
+    margin: 0px auto;
+    text-align: center;
+
+    padding: 0 15px 10px;
+}
+
+#btn-hold {
+    display: block;
+    margin: 10px auto;
+    padding: 5px 60px;
+    transition: all 0.18s ease;
+}
+
+#btn-roll {
+    display: block;
+    margin: 20px auto;
+    padding: 5px 36px;
+    transition: all 0.18s ease;
+}
+#btn-history {
+    background-color: black;
+    position: relative;
+    left: -200px;
+    padding: 10px 12px;
+    border-radius: 50%;
+    transition: all 0.18s ease;
+}
+#btn-history > i{
+    font-size: 20px;
+
+}
+#btn-configs {
+    background-color: black;
+    position: relative;
+    left: 200px;
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.18s ease;
+}
+#btn-configs > i{
+    font-size: 20px;
+
+}
+
+
+#btn-new {
+    background-color: black;
+    margin: 20px 0px 0px 30px ;
+    padding: 5px 25px;
+    transition: all 0.18s ease;
+}
+
+#btn-new > i {
+    font-size: 20px;
+}
+
+
+#titulo , #control-buttons {
+    display: block;
+    text-align: center;
+}
+
+
+
