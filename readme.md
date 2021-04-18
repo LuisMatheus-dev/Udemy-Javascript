@@ -40,13 +40,12 @@ API, tecnicas em persistencia de dados, POO
 ## :memo: Resolução dos Exercícios:
 
 <details>
-<summary><h3>Módulo 1></h3></summary>
+<summary> ### Módulo 1</summary>
   - Desafio 1
   - Desafio 2
   - Desafio 3
   - Desafio 4
 </details>
-
 
 ### Modulo 2
 - Desafio 5
