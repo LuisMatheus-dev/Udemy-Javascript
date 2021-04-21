@@ -23,8 +23,7 @@
 console.log('%c Desafio %c 22 ','font-family: "Arial";font-weight: 700; font-size: 30px; color:rgb(125, 213, 111);','font-family: "Arial";font-weight: 700; margin: 5px 10px; color: white; font-size: 25px;background: linear-gradient(200deg, rgb(40, 180, 135) 0%, rgb(125, 213, 111) 100%); padding: 10px 8px;  border-radius: 50%;') 
 console.log("\n--.--          |         ,-.-.         |     |\n  |  ,---.,---.|    ,---.| | |,---.,---|,---.|\n  |  |---'`---.|    ,---|| | ||   ||   ||---'|\n  `  `---'`---'`---'`---^` ' '`---'`---'`---'`---'")
 console.log("Current State:")
-console.log("--------------------------------------------------")
-
+console.log("--------------------------------------------------");
 const Car = function(make, velocity) {
   this.make = make;
   this.velocity = velocity;

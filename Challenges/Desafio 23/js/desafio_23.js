@@ -20,7 +20,6 @@ console.log('%c Desafio %c 23 ','font-family: "Arial";font-weight: 700; font-siz
 console.log("\n--.--          |         ,-.-.         |     |\n  |  ,---.,---.|    ,---.| | |,---.,---|,---.|\n  |  |---'`---.|    ,---|| | ||   ||   ||---'|\n  `  `---'`---'`---'`---^` ' '`---'`---'`---'`---'")
 console.log("Current State:")
 console.log("--------------------------------------------------")
-
 class CarCl { 
   
   #charge
