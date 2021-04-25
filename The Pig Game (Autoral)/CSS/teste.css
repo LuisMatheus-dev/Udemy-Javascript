@@ -1,0 +1,113 @@
+#config {
+  font-family: 'Poetsen One', sans-serif;
+  font-size: 12px;
+  color:#646464;
+}
+
+#config input {
+  border: 2px solid #646464;
+  border-radius: 30px;
+  background-color: transparent;
+  padding: 6px;
+  margin: 0 6px;
+  font-family: 'Poetsen One', sans-serif;
+  font-size: 15px;
+  color: #919191;
+  border-radius: 30px;
+  outline: none;
+  text-indent: 40px;
+}
+
+#config input:focus {
+  box-shadow: 0px -1px 10px rgba(57, 182, 78, 0.5),
+              0px 0px 15px rgba(57, 182, 78, 0.5);
+}
+
+#config label {
+  position: relative;
+  font-size: 16px;
+}
+
+#lbl-player-0 span::before,
+#lbl-player-1 span::before {
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f4ff";
+  margin-right: 10px;
+}
+
+#lbl-score span::before {
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f091";
+  margin-right: 10px;
+}
+
+#config label span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  text-indent: 25px;
+}
+
+.sucess {
+  top: 20px;
+  font-size: 15px;
+  color: #0c794f;
+  position: relative;
+}
+
+.sucess::before {
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f058";
+  color: #0c794f;
+}
+
+.warning {
+  font-size: 15px;
+  color: red;
+  position: relative;
+  top: 20px;
+}
+.warning::before {
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f071";
+  color: red;
+}
+
+.action-btn {
+  background-color: red;
+  font-size: 15px;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.12),
+              0 2px 2px rgba(0,0,0,0.12),
+              0 4px 4px rgba(0,0,0,0.12),
+              0 8px 8px rgba(0,0,0,0.12);
+}
+
+#btn-apply {
+  font-family: 'Poetsen One', sans-serif;
+  margin: 30px 0px ;
+  padding: 5px 20px;
+  
+}
+#btn-apply > i{
+  font-size: 17px;
+}
+
+
+.current-score {
+  font-family: 'Poetsen One', sans-serif;
+  font-size: 20px;
+  color: #919191;
+  border: 1px solid transparent;
+  border-radius: 40px;
+  margin: 0 auto;
+
+}
+#player-name-0, #player-name-1, .action-btn, #dice-title  {
+  margin: 0 auto;
+  font-family: 'Junar', sans-serif;
+  text-transform: uppercase;
+}
+
+
