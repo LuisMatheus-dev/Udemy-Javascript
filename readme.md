@@ -15,7 +15,7 @@ Este repositório ainda esta sendo atualizado:
 |  Pig Game |  Jogo com dados, mais informações no repositório  | <a href="https://dice-js-course.netlify.app"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a> |
 |  Pig Game (Autoral) |  Jogo com dados, versão pessoal  |   <a href="https://dice-game-js-course.netlify.app"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a> |
 |  Bankist | Simulação de um banco digital| <a href="https://bankist-js-course.netlify.app"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a> |
-|  Bankist Site | Website dinamico  | <a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Projects/Bankist%20-%20site"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a> |
+|  Bankist Site | Website dinamico  | <a href="https://bankist-site-js-course.netlify.app"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a> |
 |  Mapty | Web App para registro de atividades fisicas |    <a href="https://mapty-js-course.netlify.app"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a> |
 
 
