@@ -25,63 +25,63 @@ Este repositório ainda esta sendo atualizado:
  <details>
   <summary><strong style="font-size: 15px;">Módulo 1</strong></summary>
   <p>
-    - Desafio 1
-    <br> - Desafio 2
-    <br> - Desafio 3
-    <br> - Desafio 4
+    -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%201">Desafio 1</a>
+    <br> -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%202">Desafio 2</a>
+    <br> -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%203">Desafio 3</a>
+    <br> -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%204">Desafio 4</a>
   </p>
 </details> 
 
  <details>
   <summary><strong style="font-size: 15px;">Módulo 2</strong></summary>
   <p>
-  - Desafio 5
-  <br> - Desafio 6
-  <br> - Desafio 7
-  <br> - Desafio 8
+    <br> -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%205">Desafio 5</a>
+    <br> -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%206">Desafio 6</a>
+    <br> -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%207">Desafio 7</a>
+    <br> -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%208">Desafio 8</a>
   </p>
 </details> 
 
 <details>
 <summary><strong style="font-size: 15px;">Módulo 3</strong></summary>
   <p>
-- Desafio 9
+    <br> -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%209">Desafio 9</a>
   </p>
 </details> 
 
  <details>
   <summary><strong style="font-size: 15px;">Módulo 9</strong></summary>
 <p>
-  - Desafio 10
-  <br> - Desafio 11
-  <br> - Desafio 12
-  <br> - Desafio 13
+  -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%2010">Desafio 10</a>
+  <br> -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%2011">Desafio 11</a>
+  <br> -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%2012">Desafio 12</a>
+  <br> -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%2013">Desafio 13</a>
 </p>
 </details>
 
 <details>
   <summary><strong style="font-size: 15px;">Módulo 10</strong></summary>
 <p>
-  <br> - Desafio 14
-  <br> - Desafio 15
+    -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%2014">Desafio 14</a>
+    <br> -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%2015">Desafio 15</a>
 </p>
 </details>
 
 <details>
   <summary><strong style="font-size: 15px;">Módulo 11</strong></summary>
 <p>
-- Desafio 16, Desafio 17
-- Desafio 18
-- Desafio 19
+  -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%2016">Desafio 16</a>
+  <br> -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%2017-18">Desafio 17-18</a>
+  <br> -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%2017-19">Desafio 19</a>
 </p>
 </details>
 
 <details>
   <summary><strong style="font-size: 15px;">Módulo 13</strong></summary>
 <p>
-  <br> - Desafio 20
-  <br> - Desafio 21
-  <br> - Desafio 22
-  <br> - Desafio 23
+  -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%2020">Desafio 20</a>
+  <br> -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%2021">Desafio 21</a>
+  <br> -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%2022">Desafio 22</a>
+  <br> -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%2023">Desafio 23</a>
 </p>
 </details>
