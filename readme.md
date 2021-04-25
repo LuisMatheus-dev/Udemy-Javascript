@@ -7,40 +7,18 @@ Este repositório ainda esta sendo atualizado:
 
 ## :open_file_folder: Projetos:
 
-### Guess my Number
-Gera um número aleatório e pede para que o usuario o adivinhe
-<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Projects/Guess%20My%20Number"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a>
 
-### Modal Window
-Componente comumente usada em sites, janela flutuante
-<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Projects/Modal%20Window"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a>
+| Projeto  |   Descrição    |  Visualizar |
+|----------|:--------------:|:------------|
+| Guess my Number |  Adivinhação com Números | <a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Projects/Guess%20My%20Number"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a>|
+| Modal Window |    Componente   |   <a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Projects/Modal%20Window"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a> |
+|  Pig Game |  Jogo com dados, mais informações no repositório  | <a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Projects/Pig%20Game"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a> |
+|  Pig Game (Autoral) |  Jogo com dados, versão pessoal  |   <a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Projects/Pig%20Game/The%20Pig%20Game%20(Autoral)"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a> |
+|  Bankist | Simulação de um banco digital| <a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Projects/Bankist"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a> |
+|  Bankist Site | Website dinamico  | <a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Projects/Bankist%20-%20site"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a> |
+|  Mapty | Web App para registro de atividades fisicas |    <a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Projects/Mapty"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a> |
 
-### Pig Game
-Jogo com dado, mais informações no repositório
-<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Projects/Pig%20Game"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a>
 
-### Pig Game (Autoral)
-Interface refeita, com algumas features adicionais
-<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Projects/Pig%20Game/The%20Pig%20Game%20(Autoral)"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a>
-
-### Bankist
-Consolidação em arrays e programação funcional
-<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Projects/Bankist"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a>
-
-### Bankist Site
-Construção de comportamentos interativos, e componentes
-<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Projects/Bankist%20-%20site"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a>
-
-### Mapty
-API, tecnicas em persistencia de dados, POO
-<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Projects/Mapty"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a>
-
-| Projeto  |  Descrição    |  live |
-|----------|:-------------:|------:|
-| Guess my Number |  Gera um número aleatório e pede para que o usuario o adivinhe | <a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Projects/Guess%20My%20Number"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a>
-|
-| col 2 is |    centered   |   $12 |
-| col 3 is | right-aligned |    $1 |
 
 ## :memo: Resolução dos Exercícios:
 
