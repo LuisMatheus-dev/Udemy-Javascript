@@ -1,15 +1,4 @@
 
-<p align="center">
-  <img alt="udemy-course" src="https://i.imgur.com/JC4TeDf.png" width="452">
-</p>
-
-<style type="text/css">
-
-summary {
-   font-size: 24px;
-}
-
-</style>
 
 
 # :mag: Conteúdo:
@@ -48,36 +37,36 @@ API, tecnicas em persistencia de dados, POO
 
 ## :memo: Resolução dos Exercícios:
 
-<details>
-<summary>Módulo 1</summary>
+
+#### Módulo 1
   - Desafio 1
   - Desafio 2
   - Desafio 3
   - Desafio 4
-</details>
 
-### Modulo 2
+
+####  Modulo 2
 - Desafio 5
 - Desafio 6
 - Desafio 7
 - Desafio 8
 
-### Modulo 9
+#### Modulo 9
 - Desafio 10
 - Desafio 11
 - Desafio 12
 - Desafio 13
 
-### Modulo 10
+####  Modulo 10
 - Desafio 14
 - Desafio 15
 
-### Modulo 11
+####  Modulo 11
 - Desafio 16, Desafio 17
 - Desafio 18
 - Desafio 19
 
-### Modulo 13
+####  Modulo 13
 - Desafio 20
 - Desafio 21
 - Desafio 22
