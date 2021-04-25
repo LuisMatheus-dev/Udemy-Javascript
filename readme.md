@@ -37,7 +37,8 @@ API, tecnicas em persistencia de dados, POO
 
 | Projeto  |  Descrição    |  live |
 |----------|:-------------:|------:|
-| col 1 is |  left-aligned | $1600 |
+| Guess my Number |  Gera um número aleatório e pede para que o usuario o adivinhe | <a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Projects/Guess%20My%20Number"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a>
+|
 | col 2 is |    centered   |   $12 |
 | col 3 is | right-aligned |    $1 |
 
