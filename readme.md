@@ -35,6 +35,12 @@ Construção de comportamentos interativos, e componentes
 API, tecnicas em persistencia de dados, POO
 <a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Projects/Mapty"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a>
 
+| Projeto  |  Descrição    |  live |
+|----------|:-------------:|------:|
+| col 1 is |  left-aligned | $1600 |
+| col 2 is |    centered   |   $12 |
+| col 3 is | right-aligned |    $1 |
+
 ## :memo: Resolução dos Exercícios:
 
 
