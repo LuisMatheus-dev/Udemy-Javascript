@@ -22,37 +22,66 @@ Este repositório ainda esta sendo atualizado:
 
 ## :memo: Resolução dos Exercícios:
 
+ <details>
+  <summary><strong style="font-size: 15px;">Módulo 1</strong></summary>
+  <p>
+    - Desafio 1
+    <br> - Desafio 2
+    <br> - Desafio 3
+    <br> - Desafio 4
+  </p>
+</details> 
 
-#### Módulo 1
-  - Desafio 1
-  - Desafio 2
-  - Desafio 3
-  - Desafio 4
+ <details>
+  <summary><strong style="font-size: 15px;">Módulo 2</strong></summary>
+  <p>
+  - Desafio 5
+  <br> - Desafio 6
+  <br> - Desafio 7
+  <br> - Desafio 8
+  </p>
+</details> 
 
+<details>
+<summary><strong style="font-size: 15px;">Módulo 3</strong></summary>
+  <p>
+- Desafio 9
+  </p>
+</details> 
 
-####  Modulo 2
-- Desafio 5
-- Desafio 6
-- Desafio 7
-- Desafio 8
+ <details>
+  <summary><strong style="font-size: 15px;">Módulo 9</strong></summary>
+<p>
+  - Desafio 10
+  <br> - Desafio 11
+  <br> - Desafio 12
+  <br> - Desafio 13
+</p>
+</details>
 
-#### Modulo 9
-- Desafio 10
-- Desafio 11
-- Desafio 12
-- Desafio 13
+<details>
+  <summary><strong style="font-size: 15px;">Módulo 10</strong></summary>
+<p>
+  <br> - Desafio 14
+  <br> - Desafio 15
+</p>
+</details>
 
-####  Modulo 10
-- Desafio 14
-- Desafio 15
-
-####  Modulo 11
+<details>
+  <summary><strong style="font-size: 15px;">Módulo 11</strong></summary>
+<p>
 - Desafio 16, Desafio 17
 - Desafio 18
 - Desafio 19
+</p>
+</details>
 
-####  Modulo 13
-- Desafio 20
-- Desafio 21
-- Desafio 22
-- Desafio 23
+<details>
+  <summary><strong style="font-size: 15px;">Módulo 13</strong></summary>
+<p>
+  <br> - Desafio 20
+  <br> - Desafio 21
+  <br> - Desafio 22
+  <br> - Desafio 23
+</p>
+</details>
