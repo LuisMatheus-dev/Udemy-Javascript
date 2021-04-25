@@ -12,7 +12,7 @@ Este repositório ainda esta sendo atualizado:
 |----------|:--------------:|:------------|
 | Guess my Number |  Adivinhação com Números | <a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Projects/Guess%20My%20Number"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a>|
 | Modal Window |    Componente   |   <a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Projects/Modal%20Window"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a> |
-|  Pig Game |  Jogo com dados, mais informações no repositório  | <a href="dice-js-course.netlify.app"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a> |
+|  Pig Game |  Jogo com dados, mais informações no repositório  | <a href="https://dice-js-course.netlify.app"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a> |
 |  Pig Game (Autoral) |  Jogo com dados, versão pessoal  |   <a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Projects/Pig%20Game/The%20Pig%20Game%20(Autoral)"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a> |
 |  Bankist | Simulação de um banco digital| <a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Projects/Bankist"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a> |
 |  Bankist Site | Website dinamico  | <a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Projects/Bankist%20-%20site"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a> |
