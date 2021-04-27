@@ -26,35 +26,22 @@ const renderCountry = function(data, className = '') {
 
 const getCountriesAndNeighbour = function(country) {
     
-    const request = new XMLHttpRequest();
-    request.open('GET',`https://restcountries.eu/rest/v2/name/${country}`);
-    request.send()
 
-    request.addEventListener('load', function() {
-        const [data] = JSON.parse(this.responseText);
+    fetch(`https://restcountries.eu/rest/v2/name/${country}`)
+        .then(response => response.json())
+        .then(data => {
+            const neighbour = data[0].borders[0]
 
-        //Render country (1)
-        renderCountry(data);
-        console.log(data)
-        //Get neighbour country (2)
-        const [neighbour] = data.borders;
+            renderCountry(data[0])
 
-        if( neighbour ) {
-
-            //AJAX call country 2
-            const requestNeighbour = new XMLHttpRequest();
-            
-            requestNeighbour.open('GET', `https://restcountries.eu/rest/v2/alpha/${neighbour}`)
-            requestNeighbour.send();
-
-            requestNeighbour.addEventListener('load', function() {
-                const neighbourData = JSON.parse(this.responseText);
-                console.log(neighbourData);
-
-                renderCountry(neighbourData, 'neighbour')
-            })
-        }
-    })
+            if(neighbour) {
+                return  fetch(`https://restcountries.eu/rest/v2/alpha/${neighbour}`);
+            }
+        })
+        .then(response => response.json())
+        .then(data => renderCountry(data, "neighbour"))
+        
+        
    
 }
 
