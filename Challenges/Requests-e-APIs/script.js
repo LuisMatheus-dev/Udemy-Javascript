@@ -20,29 +20,41 @@ const renderCountry = function(data, className = '') {
         </article>`;
     
     countriesContainer.insertAdjacentHTML('beforeend', html)
-    countriesContainer.style.opacity = 1;
     
+}
+const renderError = message => {
+    countriesContainer.insertAdjacentText('beforeend',`Error: ${message}`)
+}
+
+const getJSON = function(url, errorMessage="Ops! Something went wrong") {
+    
+    return fetch(url)
+    .then(response => { 
+        
+        if(!response.ok) {
+            throw new Error (`${errorMessage},\n ${message.status}`)
+        } else {
+            return response.json()
+        }
+    })
 }
 
 const getCountriesAndNeighbour = function(country) {
-    
 
-    fetch(`https://restcountries.eu/rest/v2/name/${country}`)
-        .then(response => response.json())
+    getJSON(`https://restcountries.eu/rest/v2/name/${country}`,"❌ Country not found")
         .then(data => {
             const neighbour = data[0].borders[0]
 
             renderCountry(data[0])
 
             if(neighbour) {
-                return  fetch(`https://restcountries.eu/rest/v2/alpha/${neighbour}`);
+                return  getJSON(`https://restcountries.eu/rest/v2/alpha/${neighbour}, "❌ Country not found"`);
             }
         })
         .then(response => response.json())
         .then(data => renderCountry(data, "neighbour"))
-        
-        
-   
+        .cath(error => renderError(error.message))
+        .finally(() => countriesContainer.style.opacity = 1)
 }
 
 getCountriesAndNeighbour('brazil')
