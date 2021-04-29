@@ -10,8 +10,8 @@
 # Use esta API para fazer geocodificação reversa: https://geocode.xyz/api. A chamada AJAX
 # será feito para um URL com este formato:
 # https://geocode.xyz/52.508,13.381?geoit=json. Use a API fetch e
-# promete obter os dados. Não use a função 'getJSON' que criamos, que
-# está trapaceando 
+# promisses obter os dados. Não use a função 'getJSON' que criamos, que
+# estará trapaceando 
 
 #[ ] 3. Assim que tiver os dados, dê uma olhada neles no console para ver todos os atributos
 # que você recebeu sobre o local fornecido. Então, usando esses dados, registre um
@@ -39,3 +39,13 @@
 
 // ------ Ignorar ------
 console.log('%c Desafio %c 24 ','font-family: "Arial";font-weight: 700; font-size: 30px; color:rgb(125, 213, 111);','font-family: "Arial";font-weight: 700; margin: 5px 10px; color: white; font-size: 25px;background: linear-gradient(200deg, rgb(40, 180, 135) 0%, rgb(125, 213, 111) 100%); padding: 10px 8px;  border-radius: 50%;') 
+
+
+//https://geocode.xyz/52.508,13.381?geoit=json
+const whereAmI = function(lat,lng) {
+    return fetch(`https://geocode.xyz/${lat},${lng}?geoit=json`)
+        .then(response => response.json())
+        .then(data => console.log(data))
+}
+
+whereAmI(52.508, 13.381)
