@@ -32,7 +32,7 @@ const getJSON = function(url, errorMessage="Ops! Something went wrong") {
     .then(response => { 
         
         if(!response.ok) {
-            throw new Error (`${errorMessage},\n ${message.status}`)
+            throw new Error(`${errorMessage},\n ${response.status}`)
         } else {
             return response.json()
         }
@@ -46,14 +46,18 @@ const getCountriesAndNeighbour = function(country) {
             const neighbour = data[0].borders[0]
 
             renderCountry(data[0])
-
+            console.log(data[0])
             if(neighbour) {
-                return  getJSON(`https://restcountries.eu/rest/v2/alpha/${neighbour}, "❌ Country not found"`);
+                return  getJSON(`https://restcountries.eu/rest/v2/alpha/${neighbour}`, "❌ Country not found");
+            } else {
+                throw new Error('❌ No Neighbour found')
             }
         })
-        .then(response => response.json())
         .then(data => renderCountry(data, "neighbour"))
-        .cath(error => renderError(error.message))
+        .catch(error => { 
+            renderError(error.message)
+             console.log(error.message)
+        })
         .finally(() => countriesContainer.style.opacity = 1)
 }
 
