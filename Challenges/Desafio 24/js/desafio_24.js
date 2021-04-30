@@ -60,6 +60,11 @@ const renderCountry = function(data, className = '') {
     
 }
 
+const renderError = message => {
+    countriesContainer.insertAdjacentText('beforeend',message)
+}
+
+
 const getCountriesAndNeighbour = function(country) {
 
     getJSON(`https://restcountries.eu/rest/v2/name/${country}`,"❌ Country not found")
@@ -76,7 +81,8 @@ const getCountriesAndNeighbour = function(country) {
         })
         .then(data => renderCountry(data, "neighbour"))
         .catch(error => { 
-            console.log(error.message)
+            console.log(error)
+            renderError(error)
         })
         .finally(() => countriesContainer.style.opacity = 1)
 }
@@ -109,8 +115,10 @@ const whereAmI = function(lat,lng) {
                 console.log(`%c🔻 You are in %c ${city} in ${country}`,`font-size:15px;`,`font-size:15px; color:rgb(125, 213, 111); `)
             }
         }).catch(error => {
-            console.error(error)
+            console.log(error)
+            renderError(error)
         })
+        .finally(() => countriesContainer.style.opacity = 1)
         
     
 }
