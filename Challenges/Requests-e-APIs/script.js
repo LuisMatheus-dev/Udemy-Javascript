@@ -69,28 +69,33 @@ const renderError = message => {
 
 const getCountriesAndNeighbour = async function(country) {
 
-    const response = await fetch(`https://restcountries.eu/rest/v2/name/${country}`);
-    const [ data ] = await response.json();
-    
-    if(!response.ok) {
-       throw new Error('❌ Country not found')
-    
-    } else {
-        renderCountry(data)
-    }
+    try {
+        const response = await fetch(`https://restcountries.eu/rest/v2/name/${country}`);
+        const [ data ] = await response.json();
+        
+        if(!response.ok) {
+        throw new Error('❌ Country not found')
+        
+        } else {
+            renderCountry(data)
+        }
 
-    const neighbour = data.borders[0]
-    
-    if(!neighbour) {
-        throw new Error("❌ No Neighbour found")
-    
-    } else {
-        const resNeighbour = await fetch(`https://restcountries.eu/rest/v2/alpha/${neighbour}`);
-        const dataNeigbour = await resNeighbour.json();
-        renderCountry(dataNeigbour,'neighbour');
-    }
+        const neighbour = data.borders[0]
+        
+        if(!neighbour) {
+            throw new Error("❌ No Neighbour found")
+        
+        } else {
+            const resNeighbour = await fetch(`https://restcountries.eu/rest/v2/alpha/${neighbour}`);
+            const dataNeigbour = await resNeighbour.json();
+            renderCountry(dataNeigbour,'neighbour');
+        }
 
-    countriesContainer.style.opacity = 1;
+        countriesContainer.style.opacity = 1;
+        
+    } catch(error) {
+        renderError(error)   
+    }
 }
 
 getCountriesAndNeighbour('brazil');

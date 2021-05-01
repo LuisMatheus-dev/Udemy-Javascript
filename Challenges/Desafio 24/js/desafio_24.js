@@ -159,8 +159,8 @@ const whereAmI = function() {
             .then(data => {
                 renderCountry(data[0])
             })
-          
-    }) .catch(error => {
+    }) 
+    .catch(error => {
         renderError(error?.message)
     })
     .finally(() => countriesContainer.style.opacity = 1);       
