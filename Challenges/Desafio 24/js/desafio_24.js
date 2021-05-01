@@ -65,21 +65,10 @@ const renderError = message => {
 }
 
 
-const getCountriesAndNeighbour = function(country) {
+const getCountries = function(country) {
 
     getJSON(`https://restcountries.eu/rest/v2/name/${country}`,"❌ Country not found")
-        .then(data => {
-            const neighbour = data[0].borders[0]
-
-            renderCountry(data[0])
-
-            if(neighbour) {
-                return  getJSON(`https://restcountries.eu/rest/v2/alpha/${neighbour}`, "❌ Country not found");
-            } else {
-                throw new Error('❌ No Neighbour found')
-            }
-        })
-        .then(data => renderCountry(data, "neighbour"))
+        .then(data => renderCountry(data[0]))
         .catch(error => { 
             console.log(error)
             renderError(error)
@@ -111,8 +100,8 @@ const whereAmI = function(lat,lng) {
             if (!city) {
                 throw new Error ('❌ City and Country not found')
             } else {
-                getCountriesAndNeighbour(country)
-                console.log(`%c🔻 You are in %c ${city} in ${country}`,`font-size:15px;`,`font-size:15px; color:rgb(125, 213, 111); `)
+                getCountries(country)
+                console.log(`%c📍 You are in %c ${city} in ${country}`,`font-size:15px;`,`font-size:15px; color:rgb(125, 213, 111); `)
             }
         }).catch(error => {
             console.log(error)
@@ -125,5 +114,6 @@ const whereAmI = function(lat,lng) {
 
 whereAmI(52.508, 13.381);
 
+whereAmI(19.037, 72.873);
 
-
+whereAmI(-33.933, 18.474);
