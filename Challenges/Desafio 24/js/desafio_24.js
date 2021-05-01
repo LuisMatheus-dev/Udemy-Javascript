@@ -64,56 +64,106 @@ const renderError = message => {
     countriesContainer.insertAdjacentText('beforeend',message)
 }
 
+//! Versão 1
+// const getCountries = function(country) {
 
-const getCountries = function(country) {
-
-    getJSON(`https://restcountries.eu/rest/v2/name/${country}`,"❌ Country not found")
-        .then(data => renderCountry(data[0]))
-        .catch(error => { 
-            console.log(error)
-            renderError(error)
-        })
-        .finally(() => countriesContainer.style.opacity = 1)
-}
+//     getJSON(`https://restcountries.eu/rest/v2/name/${country}`,"❌ Country not found")
+//         .then(data => renderCountry(data[0]))
+//         .catch(error => { 
+//             console.log(error)
+//             renderError(error)
+//         })
+//         .finally(() => countriesContainer.style.opacity = 1)
+// }
 
 
-const getJSON = function(url) {
-    return fetch(url)
-        .then(response => {
-            if(response.status === 200) {
-                return response.json()  
+// const getJSON = function(url) {
+//     return fetch(url)
+//         .then(response => {
+//             if(response.status === 200) {
+//                 return response.json()  
             
-            } else if (response.status === 403) {
-                throw new Error ('Multiple requests please wait a few seconds for a new search')    
+//             } else if (response.status === 403) {
+//                 throw new Error ('Multiple requests please wait a few seconds for a new search')    
             
-            } else {
-                throw new Error ('Ops! Something went wrong')
-            }
-        })
-}
+//             } else {
+//                 throw new Error ('Ops! Something went wrong')
+//             }
+//         })
+// }
 
-const whereAmI = function(lat,lng) {
-    getJSON(`https://geocode.xyz/${lat},${lng}?geoit=json`)
-        .then(data => {
-            const { city, country } = data;
+// const whereAmI = function(lat,lng) {
+//     getJSON(`https://geocode.xyz/${lat},${lng}?geoit=json`)
+//         .then(data => {
+//             const { city, country } = data;
             
-            if (!city) {
-                throw new Error ('❌ City and Country not found')
-            } else {
-                getCountries(country)
-                console.log(`%c📍 You are in %c ${city} in ${country}`,`font-size:15px;`,`font-size:15px; color:rgb(125, 213, 111); `)
-            }
-        }).catch(error => {
-            console.log(error)
-            renderError(error)
-        })
-        .finally(() => countriesContainer.style.opacity = 1)
+//             if (!city) {
+//                 throw new Error ('❌ City and Country not found')
+//             } else {
+//                 getCountries(country)
+//                 console.log(`%c📍 You are in %c ${city} in ${country}`,`font-size:15px;`,`font-size:15px; color:rgb(125, 213, 111); `)
+//             }
+//         }).catch(error => {
+//             console.log(error)
+//             renderError(error)
+//         })
+//         .finally(() => countriesContainer.style.opacity = 1)
         
     
+// }
+
+// whereAmI(52.508, 13.381);
+
+// whereAmI(19.037, 72.873);
+
+// whereAmI(-33.933, 18.474);
+
+//! Versão 2 busca automática por localização
+
+const coords = new Promise((resolve, reject) => {
+    navigator.geolocation.getCurrentPosition(resolve,reject)
+
+    })
+
+
+const whereAmI = function() {
+    coords.then(data => {
+        const { latitude: lat, longitude: lng } = data.coords;
+        
+        //Busca dados da locatização com base nas coordenadas
+        fetch(`https://geocode.xyz/${lat},${lng}?geoit=json`)
+            .then(response => {
+                
+                if(response.status === 200) {
+                    return response.json()  
+                
+                } else if (response.status === 403) {
+                    throw new Error ('Multiple requests please wait a few seconds for a new search')    
+                
+                } else {
+                    throw new Error ('Ops! Something went wrong')
+                }
+            })
+            .then(data => {
+                const { country, city } = data;
+                            
+                if (!city) {
+                    throw new Error ('❌ City and Country not found')
+                } else {
+                    console.log(`%c📍 You are in %c ${city} in ${country}`,`font-size:15px;`,`font-size:15px; color:rgb(125, 213, 111); `)
+                   //Busca dados do pais
+                   return fetch(`https://restcountries.eu/rest/v2/name/${country}`)
+                            .then(response => response.json())
+                }
+            })
+            .then(data => {
+                renderCountry(data[0])
+            })
+          
+    }) .catch(error => {
+        renderError(error?.message)
+    })
+    .finally(() => countriesContainer.style.opacity = 1);       
 }
 
-whereAmI(52.508, 13.381);
-
-whereAmI(19.037, 72.873);
-
-whereAmI(-33.933, 18.474);
+whereAmI()
