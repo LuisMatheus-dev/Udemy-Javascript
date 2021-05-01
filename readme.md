@@ -85,3 +85,12 @@ Este repositório ainda esta sendo atualizado:
   <br> -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%2023">Desafio 23</a>
 </p>
 </details>
+
+<details>
+  <summary><strong style="font-size: 15px;">Módulo 16</strong></summary>
+<p>
+  -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Requests-e-APIs">Requests-API (Pratica)</a>
+  -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%2024">Desafio 24</a>
+  <br> -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%2025">Desafio 25</a>
+</p>
+</details>
