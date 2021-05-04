@@ -116,3 +116,10 @@ loadAll(['./img/img-1.jpg','./img/img-2.jpg','./img/img-3.jpg'])
 //   //   .catch(error => console.error(`%c❌ ${error}`,'font-size: 20px; color: white;'));
   
 // }
+
+/*
+
+
+*/
+
+
