@@ -1,3 +1,8 @@
+import '../sass/main.scss';
+import '../img/logo.png';
+import '../img/icons.svg';
+import '../img/favicon.png'
+
 const recipeContainer = document.querySelector('.recipe');
 
 const timeout = function (s) {
