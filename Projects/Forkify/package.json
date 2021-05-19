@@ -4,7 +4,7 @@
   "description": "Recipe application",
   "main": "./dist/index.html",
   "scripts": {
-    "build-dev": "webpack --mode development --config webpack.config.js"
+    "build-dev": "webpack serve --mode development --config webpack.config.js"
   },
   "repository": "https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Projects/Forkify",
   "author": "Luis Matheus",
@@ -21,7 +21,6 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
-    "@svgr/webpack": "^5.5.0",
     "svg-inline-loader": "^0.8.2",
     "url-loader": "^4.1.1"
   }

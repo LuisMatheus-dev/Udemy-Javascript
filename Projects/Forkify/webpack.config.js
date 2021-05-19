@@ -3,6 +3,13 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 
 module.exports = {
+
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    port: 9000,
+  },
+
   entry: './src/js/controller.js',
   output: {
     filename: 'index.js',
@@ -26,7 +33,7 @@ module.exports = {
       },
       //Parsing Images
       {
-        test: /\.(png|jpe?g|gif)$/i,
+        test: /\.(png|jpe?g|gif|svg)$/i,
         use: [ 
           { 
             loader: 'file-loader',
@@ -35,11 +42,6 @@ module.exports = {
         ]
       },
       //Parsing SVG's Icons
-      {
-        test: /\.svg$/,
-        use: ['@svgr/webpack'],
-      },
-    
     ],
   },
 
