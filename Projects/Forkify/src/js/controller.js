@@ -1,6 +1,6 @@
 import '../sass/main.scss';
 import '../img/logo.png';
-import '../img/icons.svg';
+import '../img/_icons.svg';
 import '../img/favicon.png'
 
 const recipeContainer = document.querySelector('.recipe');
