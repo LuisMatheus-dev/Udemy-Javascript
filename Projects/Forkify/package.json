@@ -5,7 +5,7 @@
   "main": "./dist/index.html",
   "scripts": {
     "build-dev": "webpack serve --mode development --config webpack.config.js",
-    "build-prod": "webpack serve --mode production --config webpack.config.js"
+    "build": "webpack --mode production --config webpack.config.js"
   },
   "repository": "https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Projects/Forkify",
   "author": "Luis Matheus",
@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "svg-inline-loader": "^0.8.2",
+    "svg-sprite-loader": "^6.0.6",
     "url-loader": "^4.1.1"
   }
 }
