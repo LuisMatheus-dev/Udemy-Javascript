@@ -17,7 +17,7 @@ Este repositório ainda esta sendo atualizado:
 |  Bankist | Simulação de um banco digital| <a href="https://bankist-js-course.netlify.app"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a> |
 |  Bankist Site | Website dinamico  | <a href="https://bankist-site-js-course.netlify.app"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a> |
 |  Mapty | Web App para registro de atividades fisicas |    <a href="https://mapty-js-course.netlify.app"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a> |
-|  Forkify | Web App para consultas de receitas |    <a href="https://forkify-js-course.netlify.app"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a> |
+|  Forkify (Em Construção) | Web App para consultas de receitas |    <a href="https://forkify-js-course.netlify.app"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a> |
 
 
 
