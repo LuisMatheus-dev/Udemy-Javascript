@@ -1,7 +1,10 @@
 import '../sass/main.scss';
 import '../img/logo.png';
 import '../img/_icons.svg';
-import '../img/favicon.png'
+import '../img/favicon.png';
+
+import 'core-js/stable';
+import 'regenerator-runtime/runtime';
 
 const recipeContainer = document.querySelector('.recipe');
 
