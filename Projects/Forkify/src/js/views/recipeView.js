@@ -4,14 +4,23 @@ import { Fraction } from 'fractional';
 class RecipeView {
   #parentElement = document.querySelector('.recipe');
   #data;
+  #errorMessage = 'We could not find that recipe. Please try another one!';
+  #message = '';
 
-  render() {
+  render(data) {
     this.#data = data;
+    console.log(data);
     const markup = this._generateMarkup();
 
     //Adicioando Template
     this.#clear();
-    recipeContainer.insertAdjacentHTML('afterbegin',markup);
+    this.#parentElement.insertAdjacentHTML('afterbegin',markup);
+
+  }
+
+  addHandlerRender(handler) {
+    
+    ['hashchange','load'].forEach(ev => window.addEventListener(ev, handler));
 
   }
 
@@ -28,21 +37,52 @@ class RecipeView {
     this.#parentElement.insertAdjacentHTML('afterbegin',markup);
   };
 
+  renderError(message = this.#errorMessage) {
+    const markup = 
+    `<div class="error">
+        <div>
+          <svg>
+            <use href="#_icons_icon-alert-triangle"></use>
+          </svg>
+        </div>
+        <p>${message}</p>
+      </div>`
+    this.#clear();
+    this.#parentElement.insertAdjacentHTML('afterbegin',markup);
+  };
+
+  
+  renderMessage(message = this.#message) {
+    const markup = 
+    `<div class="message">
+      <div>
+        <svg>
+          <use href="#_icons_icon-smile"></use>
+        </svg>
+      </div>
+      <p>${message}</p>
+    </div>`
+     
+    this.#clear();
+    this.#parentElement.insertAdjacentHTML('afterbegin',markup);
+  };
+
+
 
   #clear() {
     this.#parentElement.innerHTML = '';
   }
 
   _generateMarkup() {
-    
+    console.log(this.#data.ingredients)
     return `
+    
     <figure class="recipe__fig">
       <img src="${this.#data.image}" alt="Tomato" class="recipe__img" />
       <h1 class="recipe__title">
         <span>${this.#data.title}</span>
       </h1>
     </figure>
-
     <div class="recipe__details">
       <div class="recipe__info">
         <svg class="recipe__info-icon">
@@ -71,7 +111,6 @@ class RecipeView {
         </button>
       </div>
     </div>
-
     <div class="recipe__user-generated">
         <svg>
           <use href="#_icons_icon-user"></use>
@@ -87,18 +126,9 @@ class RecipeView {
     <div class="recipe__ingredients">
       <h2 class="heading--2">Recipe ingredients</h2>
       <ul class="recipe__ingredient-list">
-        ${this.#data.ingredients.map(this.#generatorMarkupIngredient()).join('')}
 
-        <li class="recipe__ingredient">
-          <svg class="recipe__icon">
-            <use href="#_icons_icon-check"></use>
-          </svg>
-          <div class="recipe__quantity">0.5</div>
-          <div class="recipe__description">
-            <span class="recipe__unit">cup</span>
-            ricotta cheese
-          </div>
-        </li>
+        ${this.#data.ingredients.map(this.#generatorMarkupIngredient).join('')}
+       
       </ul>
     </div>
 
@@ -123,7 +153,6 @@ class RecipeView {
   }
 
   #generatorMarkupIngredient(ing) {
-    ing => {
       return `
         <li class="recipe__ingredient">
           <svg class="recipe__icon">
@@ -136,8 +165,7 @@ class RecipeView {
           </div>
         </li>
       `;
-    }
-  }
+  };
 
 }
 

@@ -9,7 +9,7 @@ export const loadRecipe = async function(hash) {
     try {
     
       const data = await getJSON(`${API_URL}/${hash}`)
-  
+
       // Extraindo dados
       const { recipe } = data.data;
 
@@ -24,9 +24,11 @@ export const loadRecipe = async function(hash) {
         ingredients: recipe.ingredients
       }
 
-      console.log(state);
 
     } catch(error) {
-      alert(error)
+      console.error(error);
+      throw error
     }
-}
+};
+
+
