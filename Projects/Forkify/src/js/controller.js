@@ -5,7 +5,7 @@ import '../img/logo.png';
 import '../img/favicon.png';
 
 import recipeView from './views/recipeView.js';
-
+import searchView from './views/searchView.js'
 
 const recipeContainer = document.querySelector('.recipe');
 
@@ -40,9 +40,29 @@ const controlRecipes = async function() {
         
 };
 
+const controlSearchResults = async function() {
+
+  try {
+    //1) Get searhc query 
+    let query = searchView.getQuery();
+    
+    if(!query) return;
+    
+    //2) Load search results
+    await model.loadSearchResults(query);
+
+    //3) Render results 
+    console.log(model.state.search.results)
+
+  } catch(error) {
+    console.error(error)
+  }
+}
+
 
 const init = function() {
   recipeView.addHandlerRender(controlRecipes)
+  searchView.addHandlerSearch(controlSearchResults)
 };
 
 init();
