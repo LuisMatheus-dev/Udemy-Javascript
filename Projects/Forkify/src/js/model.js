@@ -53,7 +53,9 @@ export const loadSearchResults = async function(query) {
         image: rec.image_url,
       };
     });
-    
+    //Reset to frist page
+    state.search.page = 1;
+
   } catch(error) {
     console.error(error)
     throw err;
