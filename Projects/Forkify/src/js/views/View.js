@@ -34,9 +34,9 @@ export default class View {
       if(!newEl.isEqualNode(curEl) ) {
         Array.from(newEl.attributes).forEach(attr => curEl.setAttribute(attr.name, attr.value));
       }
-    })
+    });
   
-  }
+  };
    
   _clear() {
     this._parentElement.innerHTML = '';

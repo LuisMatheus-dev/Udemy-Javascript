@@ -60,7 +60,7 @@ class PaginationView extends View {
           <use href="#_icons_icon-arrow-right"></use>
         </svg>
       </button>
-    `;
+    `; 
     };
     
     //Page 1, and there no NO other pages
