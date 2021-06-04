@@ -22,7 +22,8 @@ Demais informações podem ser encontradas em sua documentação <a href="https:
 
 <h3>◾️ Clonando o projeto</h3>
 <p>Antes de qualquer coisa, deve-se clonar este repositório, da forma descrita abaixo em seu terminal:</p>
-<code>git clone 'https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Projects/Forkify'</code>
+<code>git clone 'https://github.com/LuisMatheus-dev/Udemy-Javascript.git'</code>
+<p>Agora navegue até o projeto Forkify, e siga os passos abaixo:<p>
 
 <h3>◾️ Dependências</h3>
 <p>Entre no diretório raiz, onde se encontra o arquivo <code>package.json</code>, e novamente em seu terminal, execute os passos abaixo, para cada situação:
