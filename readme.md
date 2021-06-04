@@ -1,98 +1,48 @@
-
-
-
-# :mag: Conteúdo:
-Este repositório ainda esta sendo atualizado:
-**Status Atual**: 16/21;
-
-## :open_file_folder: Projetos:
-
-
-| Projeto  |   Descrição    |  Visualizar |
-|----------|:--------------:|:------------|
-| Guess my Number |  Adivinhação com Números | <a href="https://guess-my-number-js-course.netlify.app"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a>|
-| Modal Window |    Componente   |   <a href="https://modal-js-course.netlify.app"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a> |
-|  Pig Game |  Jogo com dados, mais informações no repositório  | <a href="https://dice-js-course.netlify.app"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a> |
-|  Pig Game (Autoral) |  Jogo com dados, versão pessoal  |   <a href="https://dice-game-js-course.netlify.app"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a> |
-|  Bankist | Simulação de um banco digital| <a href="https://bankist-js-course.netlify.app"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a> |
-|  Bankist Site | Website dinamico  | <a href="https://bankist-site-js-course.netlify.app"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a> |
-|  Mapty | Web App para registro de atividades fisicas |    <a href="https://mapty-js-course.netlify.app"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a> |
-|  Forkify (Em Construção) | Web App para consultas de receitas |    <a href="https://forkify-js-course.netlify.app"><img src="https://i.imgur.com/uLkkKPn.png" width="152" alt="project live btn"></a> |
-
-
-
-## :memo: Resolução dos Exercícios:
-
- <details>
-  <summary><strong style="font-size: 15px;">Módulo 1</strong></summary>
-  <p>
-    -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%201">Desafio 1</a>
-    <br> -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%202">Desafio 2</a>
-    <br> -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%203">Desafio 3</a>
-    <br> -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%204">Desafio 4</a>
-  </p>
-</details> 
-
- <details>
-  <summary><strong style="font-size: 15px;">Módulo 2</strong></summary>
-  <p>
-    <br> -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%205">Desafio 5</a>
-    <br> -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%206">Desafio 6</a>
-    <br> -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%207">Desafio 7</a>
-    <br> -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%208">Desafio 8</a>
-  </p>
-</details> 
-
-<details>
-<summary><strong style="font-size: 15px;">Módulo 3</strong></summary>
-  <p>
-    <br> -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%209">Desafio 9</a>
-  </p>
-</details> 
-
- <details>
-  <summary><strong style="font-size: 15px;">Módulo 9</strong></summary>
-<p>
-  -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%2010">Desafio 10</a>
-  <br> -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%2011">Desafio 11</a>
-  <br> -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%2012">Desafio 12</a>
-  <br> -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%2013">Desafio 13</a>
+<p align="center">
+  <img alt="nodeFarm" src="https://i.imgur.com/2UekWyp.png" width="600px">
 </p>
-</details>
+<p align="center">
+  <a href="https://app.netlify.com/sites/forkify-js-course/deploys">
+    <img src='https://api.netlify.com/api/v1/badges/9846ebee-9948-49bf-ad2c-a33e1f8aa838/deploy-status'/>
+  </a>
+</p>  
+ 
+ 
+<h1>📖 O Projeto</h1> 
+<p>Este projeto foi desenvolvido no ultimo módulo do curso de Javascript.
+A proposta é um webapp para pesquisa e criação de receitas culinárias.
 
-<details>
-  <summary><strong style="font-size: 15px;">Módulo 10</strong></summary>
-<p>
-    -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%2014">Desafio 14</a>
-    <br> -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%2015">Desafio 15</a>
-</p>
-</details>
+<h2>🔍 A API</h2>
+<p>A curadoria das receitas são provenientes da API, (não desenvolvida durante o curso). 
+Demais informações podem ser encontradas em sua documentação <a href="https://forkify-api.herokuapp.com/v2">aqui</a></p>
 
-<details>
-  <summary><strong style="font-size: 15px;">Módulo 11</strong></summary>
-<p>
-  -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%2016">Desafio 16</a>
-  <br> -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%2017-18">Desafio 17-18</a>
-  <br> -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%2017-19">Desafio 19</a>
+<h2> 🤔 Como Utilizar este Repositório ?</h2>
+<p>Este projeto utiliza a versão mais <code>5.37.0</code> do webpack.
 </p>
-</details>
 
-<details>
-  <summary><strong style="font-size: 15px;">Módulo 13</strong></summary>
-<p>
-  -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%2020">Desafio 20</a>
-  <br> -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%2021">Desafio 21</a>
-  <br> -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%2022">Desafio 22</a>
-  <br> -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%2023">Desafio 23</a>
-</p>
-</details>
+<h3>◾️ Clonando o projeto</h3>
+<p>Antes de qualquer coisa, deve-se clonar este repositório, da forma descrita abaixo em seu terminal:</p>
+<code>git clone 'https://github.com/LuisMatheus-dev/Udemy-Javascript.git'</code>
+<p>Agora navegue até o projeto Forkify, e siga os passos abaixo:<p>
 
-<details>
-  <summary><strong style="font-size: 15px;">Módulo 16</strong></summary>
-<p>
-  -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Requests-e-APIs">Requests-API (Pratica)</a>
-  <br> -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%2024">Desafio 24</a>
-  <br> -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%2025">Desafio 25</a>
-  <br> -<a href="https://github.com/LuisMatheus-dev/Udemy-Javascript/tree/master/Challenges/Desafio%2026">Desafio 26</a>
+<h3>◾️ Dependências</h3>
+<p>Entre no diretório raiz, onde se encontra o arquivo <code>package.json</code>, e novamente em seu terminal, execute os passos abaixo, para cada situação:
 </p>
-</details>
+ 
+<strong>🔴 Caso tenha o NPM:</strong> <code>npm install</code>
+<br><strong>🔵 Caso tenha o yarn:</strong> <code>yarn add</code>
+
+<h3> Iniciado o Webpack Server</h3>
+<p>O Webpack prove para nós um server próprio para automatizar o processo de building, para inicia-lo , eu seu terminal execute o comando:
+<code>yarn build-dev</code></p>
+
+<p>Por padrão a porta para o server será a 9000, caso o webpack não abra o projeto automaticamente, podemos simplismente acessa-lo no navegador pelo endereço:
+<code>localhost:9000</code></p>
+<p>
+
+<p>❗️O webpack server <strong>não</strong> cria o build no diretório local, ao invés disso ele é acessado em memória.Caso queira o build local, no terminal digite:
+<code>yarn build</code><p>
+  
+<h3>🐛 O Bug</h3>
+<p>Neste momento (04/06/2021), o projeto contem um bug. Quando adicionado a receita, a mensagem de sucesso faz com o que o form desapareça , impossibilitando adcionar mais receitas
+isto já esta sendo trabalhado para sua correção 😃. 
